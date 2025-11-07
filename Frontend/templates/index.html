@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CrickEye Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 1100px; margin: auto; }
+    h1 { margin-bottom: 6px; }
+    .row { display:flex; gap:20px; flex-wrap:wrap; }
+    .card { background:#fff; border:1px solid #eee; padding:12px; border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,0.03); }
+    .col { flex:1; min-width:300px; }
+    table { width:100%; border-collapse:collapse; }
+    th,td { padding:8px; border-bottom:1px solid #f0f0f0; text-align:left }
+    pre { background:#fafafa; padding:10px; border-radius:6px; overflow:auto; }
+    form label { display:block; margin-top:8px; font-size:0.9rem; }
+    input, select { width:100%; padding:8px; margin-top:4px; box-sizing:border-box }
+    button { margin-top:10px; padding:8px 12px; cursor:pointer }
+    #alerts-list { max-height:240px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <h1>CrickEye — Dashboard</h1>
+  <p>Simple dashboard showing latest player data, historical table, chart, and alerts.</p>
+
+  <div class="row" style="margin-bottom:18px;">
+    <div class="col card">
+      <h3>Quick Add Performance</h3>
+      <form id="add-form">
+        <label>Player name
+          <input type="text" id="player_name" required />
+        </label>
+        <label>Match date
+          <input type="date" id="match_date" required />
+        </label>
+        <label>Performance type
+          <select id="performance_type" required>
+            <option value="batting">Batting</option>
+            <option value="bowling">Bowling</option>
+            <option value="fielding">Fielding</option>
+          </select>
+        </label>
+        <label>Performance value (strike rate / economy / missed)
+          <input type="text" id="performance_value" required />
+        </label>
+        <button type="submit">Add</button>
+        <div id="form-status" style="margin-top:8px;color:green"></div>
+      </form>
+    </div>
+
+    <div class="col card">
+      <h3>Latest Player Data (first 10)</h3>
+      <pre id="player-data">Loading...</pre>
+    </div>
+  </div>
+
+  <div class="row" style="margin-bottom:18px;">
+    <div class="col card">
+      <h3>Historical Performance (table)</h3>
+      <div style="max-height:350px; overflow:auto;">
+        <table id="history-table">
+          <thead>
+            <tr><th>Player</th><th>Date</th><th>Type</th><th>Value</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col card">
+      <h3>Strike Rate / Economy Chart</h3>
+      <canvas id="chart" style="width:100%; height:260px;"></canvas>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:24px;">
+    <h3>Alerts</h3>
+    <div id="alerts-list"><pre id="alerts">Loading...</pre></div>
+  </div>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>
