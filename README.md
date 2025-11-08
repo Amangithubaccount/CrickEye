@@ -121,12 +121,12 @@ Provides JSON API endpoints for player data and alerts
 
 🧠 Main API Endpoints:
 
-Endpoint	    |        Method	           |                     Description
-________________|__________________________|__________________________________________
-    /	        |         GET	           |                  Loads dashboard UI
-/player-data	|         GET	           |     Returns all player data (CSV + manually added)
-/player-data	|         POST	           |              Adds new player data manually
-/alerts	        |         GET	           |              Returns all generated alerts
+        Endpoint	    |        Method	           |                     Description
+        ________________|__________________________|__________________________________________
+            /	        |         GET	           |                  Loads dashboard UI
+        /player-data	|         GET	           |     Returns all player data (CSV + manually added)
+        /player-data	|         POST	           |              Adds new player data manually
+        /alerts	        |         GET	           |              Returns all generated alerts
 
 
 🧠 Backend Analysis Rules:
@@ -242,15 +242,16 @@ Crick_Eye/
 
 
 
-> 🧰 Tech Stack
+>    🧰 Tech Stack 
 
-       Layer	          |                  Technology	            |                Description
-__________________________|_________________________________________|________________________________________
-    🧠 Backend	         |                 Flask (Python)	       |           Handles logic, data, APIs
-    🧮 Data	             |                    Pandas	           |           Reads and analyzes CSV files
-    🎨 Frontend	         |              HTML, CSS, JavaScript	   |           UI structure and interactivity
-    📊 Visualization	 |                   Chart.js	           |           Dynamic charts for performance
-    💻 IDE	             |               Visual Studio Code	       |           Development environment
+            Layer	                |                Technology	             |              Description
+____________________________________|________________________________________|___________________________________________
+                                    |                                        |
+            🧠 Backend	                           Flask (Python)	                  Handles logic, data, APIs
+            🧮 Data	                                 Pandas	                          Reads and analyzes CSV files
+            🎨 Frontend	                      HTML, CSS, JavaScript	                  UI structure and interactivity
+            📊 Visualization	                    Chart.js	                      Dynamic charts for performance
+            💻 IDE	                            Visual Studio Code	                  Development environment
 
 
 
