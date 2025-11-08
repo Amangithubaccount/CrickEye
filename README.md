@@ -1,6 +1,12 @@
 🏏 CrickEye — Real-Time Cricket Performance Monitoring Dashboard
 
 
+## 🏏 CrickEye – Real-Time Cricket Performance Monitoring Dashboard
+
+![CrickEye Dashboard](dashboard_preview.png)
+
+
+
 > 🧠 An interactive, data-driven dashboard to monitor cricket players’ batting, bowling, and fielding performances in real time.
 
 Built using Flask (Python) for backend processing and HTML + CSS + JavaScript for the frontend.
