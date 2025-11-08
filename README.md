@@ -82,6 +82,7 @@ pip install flask pandas
 
 Your folder should look like this 👇
 
+'''bash
 Crick_Eye/
 │
 ├── app.py
@@ -98,7 +99,7 @@ Crick_Eye/
 │   └── script.js
 │
 └── venv/
-
+'''
 
 
 > ⚙ Backend — Flask App
@@ -223,6 +224,7 @@ python app.py
 
 > 🧩 Project Structure
 
+'''bash
 Crick_Eye/
 │
 ├── app.py                     # Flask backend (main file)
@@ -239,20 +241,18 @@ Crick_Eye/
 │   └── script.js              # JavaScript (fetch + charts)
 │
 └── venv/                      # Virtual environment
+'''
 
 
+> 🧰 Tech Stack
 
->    🧰 Tech Stack 
-
-            Layer	                |                Technology	             |              Description
-____________________________________|________________________________________|___________________________________________
-                                    |                                        |
-            🧠 Backend	                           Flask (Python)	                  Handles logic, data, APIs
-            🧮 Data	                                 Pandas	                          Reads and analyzes CSV files
-            🎨 Frontend	                      HTML, CSS, JavaScript	                  UI structure and interactivity
-            📊 Visualization	                    Chart.js	                      Dynamic charts for performance
-            💻 IDE	                            Visual Studio Code	                  Development environment
-
+    Layer	                                       Technology	
+___________________________________________________________________________
+🧠 Backend	                 |                     Flask (Python)	
+🧮 Data	                     |                     Pandas	
+🎨 Frontend	                 |                     HTML, CSS, JavaScript
+📊 Visualization	         |                     Chart.js	
+💻 IDE	                     |                     Visual Studio Code	
 
 
 
