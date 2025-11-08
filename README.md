@@ -82,7 +82,7 @@ pip install flask pandas
 
 Your folder should look like this 👇
 
-'''bash
+```bash
 Crick_Eye/
 │
 ├── app.py
@@ -99,7 +99,7 @@ Crick_Eye/
 │   └── script.js
 │
 └── venv/
-'''
+```
 
 
 > ⚙ Backend — Flask App
@@ -121,13 +121,14 @@ Provides JSON API endpoints for player data and alerts
 
 
 🧠 Main API Endpoints:
-
+```bash
         Endpoint	    |        Method	           |                     Description
         ________________|__________________________|__________________________________________
             /	        |         GET	           |                  Loads dashboard UI
         /player-data	|         GET	           |     Returns all player data (CSV + manually added)
         /player-data	|         POST	           |              Adds new player data manually
         /alerts	        |         GET	           |              Returns all generated alerts
+```
 
 
 🧠 Backend Analysis Rules:
@@ -183,12 +184,14 @@ Refreshes alerts without page reload
 
 > 🧠 Performance Rules & Alerts
 
+```bash
     Type	       |             Rule	           |          Alert Message	          |      Emoji
     _______________|_______________________________|__________________________________|____________________
                    |                               |                                  |
     Batting	       |        Strike Rate > 150	   |        High Strike Rate	      |        🏏
     Bowling	       |          Economy < 6	       |          Good Bowling	          |        🎯
     Fielding	   |          Missed > 0	       |    Missed Fielding Opportunity	  |        🧤
+```
 
 All alerts appear instantly on the dashboard in the “Alerts” panel with timestamps ⏰
 
@@ -224,7 +227,7 @@ python app.py
 
 > 🧩 Project Structure
 
-'''bash
+```bash
 Crick_Eye/
 │
 ├── app.py                     # Flask backend (main file)
@@ -241,11 +244,12 @@ Crick_Eye/
 │   └── script.js              # JavaScript (fetch + charts)
 │
 └── venv/                      # Virtual environment
-'''
+```
 
 
 > 🧰 Tech Stack
 
+```bash
     Layer	                                       Technology	
 ___________________________________________________________________________
 🧠 Backend	                 |                     Flask (Python)	
@@ -253,7 +257,7 @@ ___________________________________________________________________________
 🎨 Frontend	                 |                     HTML, CSS, JavaScript
 📊 Visualization	         |                     Chart.js	
 💻 IDE	                     |                     Visual Studio Code	
-
+```
 
 
 > 💬 How It Works (Simple Flow)
